@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .main {
+        height: 99vh;
+        width: 100%;
+        background-image: url(backgroundimg\ \(2\).png);
+        background-size:auto;
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        background-color: #0b0c0b;
+        filter: opacity(0.95);
+    }
+
+    .text {
+        margin-top: 50px;
+        height: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .heading {
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Source Sans Pro";
+    }
+
+    .description {
+        width: 1173px;
+        height: 39px;
+        font-size: 14px;
+        line-height: 29px;
+        color: #f4f5f9;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: center;
+    }
+
+    .design {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bar {
+        height: 2px;
+        width: 120px;
+        background-color: #fff;
+        opacity: 0.4;
+    }
+
+    .point {
+        background-color: #e74c3c;
+        border: 1px solid #e74c3c;
+        height: 10px;
+        width: 10px;
+        border-radius: 60px;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .b {
+        position: absolute;
+        fill: none;
+        stroke: #e74c3c;
+        stroke-miterlimit: 100;
+        stroke-width: 3;
+        top: 0px;
+    }
+
+    .pic {
+        width: 51px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #0b0c0b;
+        border: 2px solid #e74c3c;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .cover {
+        position: absolute;
+        opacity: 0;
+        background-color: #e74c3c;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        border: inherit;
+        z-index: 3;
+    }
+
+    #img1 {
+        background-image: url(https://tse2.mm.bing.net/th?id=OIP.cXp6dzgMQkTtG527vW9U5QHaJQ&pid=Api&P=0&h=180);
+        top: 59%;
+        left: 280px;
+    }
+
+    #img2 {
+        background-image: url(https://tse3.mm.bing.net/th?id=OIP.EBYe_yfvWtCMFxAARq7KJQHaHC&pid=Api&P=0&h=180);
+        top: 53%;
+        left: 600px;
+    }
+
+    #img3 {
+        background-image: url(https://tse1.mm.bing.net/th?id=OIP.inQfIMoOf0NH_4sdq_OV5wHaGs&pid=Api&P=0&h=180);
+        top: 58.5%;
+        left: 870px;
+    }
+
+    #img4 {
+        background-image: url(https://tse3.mm.bing.net/th?id=OIP.uDDDjHDaXFNnpCiCe4VCtAAAAA&pid=Api&P=0&h=180);
+        top: 49.5%;
+        left: 1110px;
+
+    }
+
+    #img5 {
+        background-image: url(https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Image.png);
+        top: 25%;
+        left: 1300px;
+
+    }
+
+    .pic:hover {
+        transform: scale(1.5);
+    }
+
+    .pic:hover .cover {
+        opacity: 0.502;
+    }
+   
+</style>
+
+<body>
+    <div class="main">
+        <div class="text">
+            <div class="heading">our team</div>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis inventore
+                placeat quod neque pariatur illum?</div>
+            <div class="design">
+                <div class="bar"></div>
+                <div class="point"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1928 652" width="100%" height="540px">
+            <style>
+                .a {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    opacity: .1;
+                    fill: #e74c3c;
+                }
+            </style>
+            <path class="a"
+                d="m1922 3c-14.5 49.8-351.5 452.6-828 342-476.5-110.6-1094 169-1094 169v137.5h1920c0 0 16.5-698.3 2-648.5z" />
+        </svg>
+        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1922 470" width="100%" height="540">
+            <path class="b" d="m0 511c0 0 617.5-279.6 1094-169 476.5 110.6 813.5-292.2 828-342" />
+        </svg>
+
+        <div class="pic" id="img1">
+            <div class="cover"></div>
+        </div>
+
+        <div class="pic" id="img2">
+            <div class="cover"></div>
+        </div>
+
+        <div class="pic" id="img3">
+            <div class="cover"></div>
+        </div>
+
+        <div class="pic" id="img4">
+            <div class="cover"></div>
+        </div>
+
+        <div class="pic" id="img5">
+            <div class="cover"></div>
+        </div>
+    </div>
+</body>
+
+</html>
