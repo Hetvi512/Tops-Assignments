@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="steps">Enter the number of terms for Fibonacci Series:</label>
+    <input type="number" name="" id="steps">
+    <h2 id="result"></h2>
+    <button onclick="Fibonacci()">Get Fibonacci</button>
+
+    <script>
+        function Fibonacci() {
+            var first = 0, second = 1, next, i;
+            var n = document.getElementById("steps").value;
+            var resultString = "Fibonacci Series: ";
+
+            for (i = 1; i <=n; i++) {
+                resultString = resultString + first + " ";
+                next = first + second;
+                first = second;
+                second = next;
+            }
+
+            document.getElementById("result").innerHTML = resultString;
+        }
+    </script>
+</body>
+
+</html>

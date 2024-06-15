@@ -1,0 +1,22 @@
+Q.59 What is Bom vs Dom in JS?
+
+Ans:- BOM (Browser Object Model)
+
+The BOM represents the browser environment and allows JavaScript to interact with the browser itself, rather than the content of the document. It provides access to browser-specific objects and functions, enabling control over the browser window and its components. The BOM is not standardized, so different browsers may implement it differently. Common BOM objects include:
+
+window: Represents the browser window and provides methods to control it (e.g., window.open(), window.close(), window.alert()).
+navigator: Provides information about the browser (e.g., navigator.userAgent, navigator.language).
+location: Provides information about the current URL and allows navigation to different URLs (e.g., location.href, location.reload()).
+history: Allows manipulation of the browser's session history (e.g., history.back(), history.forward(), history.go()).
+screen: Provides information about the user's screen (e.g., screen.width, screen.height).
+
+
+DOM (Document Object Model)
+
+The DOM represents the structure and content of the HTML document, allowing JavaScript to interact with and manipulate the web page's elements. The DOM is a standard defined by the W3C (World Wide Web Consortium), ensuring consistent behavior across different browsers. The DOM represents the document as a tree of nodes, where each node corresponds to a part of the document (e.g., elements, attributes, text).
+
+Common DOM methods and properties include:
+
+document: Represents the entire HTML document and serves as the entry point to the DOM (e.g., document.getElementById(), document.querySelector()).
+Element: Represents an HTML element and provides methods to manipulate it (e.g., element.innerHTML, element.style, element.addEventListener()).
+Node: Represents a generic node in the DOM tree (e.g., node.appendChild(), node.removeChild()).

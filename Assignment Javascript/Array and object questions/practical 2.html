@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 400px;
+            width: 40%;
+            border: 2px solid black;
+            margin-top: 125px;
+        }
+
+        .button {
+            height: 30px;
+            width: 35%;
+            margin: 5px;
+        }
+
+        span {
+            color: rgb(76, 150, 199);
+            font-weight: 900;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <table cellspacing="25">
+                <tr>
+                    <td colspan="2" align="center">Maths Operations</td>
+                </tr>
+                <tr>
+                    <td>Enter 1st number :</td>
+                    <td><input type="text" id="a"></td>
+                </tr>
+                <tr>
+                    <td>Enter 2nd number :</td>
+                    <td><input type="text" id="b"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="+" class="button" onclick="one()">
+                        <input type="button" value="-" class="button" onclick="two()">
+                        <input type="button" value="*" class="button" onclick="three()">
+                        <input type="button" value="/" class="button" onclick="four()">
+                        <input type="button" value="%" class="button" onclick="five()">
+                    </td>
+                    <td> Answer is : <span id="ans"></span></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <script>
+        var button
+
+        function one() {
+            s1 = document.getElementById("a").value
+            s2 = document.getElementById("b").value
+            var add = (parseInt(s1) + parseInt(s2))
+            document.getElementById("ans").innerHTML = add
+        }
+
+
+        function two() {
+            s1 = document.getElementById("a").value
+            s2 = document.getElementById("b").value
+            var sub = (parseInt(s1) - parseInt(s2))
+            document.getElementById("ans").innerHTML = sub
+        }
+
+        function three() {
+            s1 = document.getElementById("a").value
+            s2 = document.getElementById("b").value
+            var mul = (parseInt(s1) * parseInt(s2))
+            document.getElementById("ans").innerHTML = mul
+        }
+
+        function four() {
+            s1 = document.getElementById("a").value
+            s2 = document.getElementById("b").value
+            var div = (parseInt(s1) / parseInt(s2))
+            document.getElementById("ans").innerHTML = div
+        }
+
+        
+        function five() {
+            s1 = document.getElementById("a").value
+            s2 = document.getElementById("b").value
+            var rem = (parseInt(s1) % parseInt(s2))
+            document.getElementById("ans").innerHTML = rem
+        }
+
+    </script>
+</body>
+
+</html>

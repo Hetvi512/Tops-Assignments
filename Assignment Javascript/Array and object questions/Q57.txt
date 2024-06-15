@@ -1,0 +1,65 @@
+Q.57 how many type of JS Event? How to use it ? 
+
+Ans: There are many types of events in JavaScript, and they can be broadly categorized into the following groups:
+
+Mouse Events:
+
+click: Fires when a mouse button is clicked.
+dblclick: Fires when a mouse button is double-clicked.
+mousedown: Fires when a mouse button is pressed.
+mouseup: Fires when a mouse button is released.
+mouseover: Fires when the mouse pointer moves over an element.
+mouseout: Fires when the mouse pointer moves out of an element.
+mousemove: Fires when the mouse pointer is moving while it is over an element.
+mouseenter: Fires when the mouse pointer enters the element.
+mouseleave: Fires when the mouse pointer leaves the element.
+
+Keyboard Events:
+
+keydown: Fires when a key is pressed down.
+keyup: Fires when a key is released.
+keypress: Fires when a key is pressed down and released (deprecated, use keydown and keyup instead).
+
+Form Events:
+
+submit: Fires when a form is submitted.
+reset: Fires when a form is reset.
+focus: Fires when an element gains focus.
+blur: Fires when an element loses focus.
+change: Fires when the value of an element changes.
+input: Fires when the value of an <input>, <textarea>, or <select> element is changed.
+
+Window Events:
+
+load: Fires when the whole page has loaded, including all dependent resources such as stylesheets and images.
+unload: Fires when the document or a resource is being unloaded.
+resize: Fires when the document view (window) has been resized.
+scroll: Fires when the document view (window) or an element is being scrolled.
+
+Document Events:
+
+DOMContentLoaded: Fires when the HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+readystatechange: Fires when the readyState attribute of a document has changed.
+
+Clipboard Events:
+
+copy: Fires when the user copies the content of an element.
+cut: Fires when the user cuts the content of an element.
+paste: Fires when the user pastes some content in an element.
+
+Drag Events:
+
+drag: Fires when an element is being dragged.
+dragend: Fires when the user has finished dragging the element.
+dragenter: Fires when the dragged element enters a valid drop target.
+dragleave: Fires when the dragged element leaves a valid drop target.
+dragover: Fires when the dragged element is over a valid drop target.
+dragstart: Fires when the user starts dragging an element.
+drop: Fires when the dragged element is dropped on a valid drop target.
+
+How to Use Events
+Events can be used in JavaScript by assigning event handler functions to the desired event types. Here are some common ways to add event listeners:
+
+Using HTML Event Attributes:
+Using addEventListener Method:
+Using DOM Properties:

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="num">Enter a Number : </label>
+    <input type="number" name="" id="num">
+    <p id="result"></p>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check() {
+            var a = document.getElementById("num").value;
+
+            (a % 2 == 0) ? document.getElementById("result").innerHTML = a + " is Even Number" : document.getElementById("result").innerHTML = a + " is Odd Number";
+        }
+    </script>
+</body>
+
+</html>

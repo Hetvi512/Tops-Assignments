@@ -1,0 +1,24 @@
+Q.30 What are the looping structures in JavaScript? Any one Example?
+
+There are many different kinds of loops, but they all essentially do the same thing: 
+they repeat an action some number of times.In JavaScript, there are 7 types of loops that can
+be used to execute a block of code repeatedly. Each loop has its own specific use case and syntax.
+
+ for Loop
+ while Loop
+ do-while Loop
+ for-in Loop
+ for-of Loop
+ forEach loop
+ map Loop
+
+ Example:
+
+ for (let i = 0; i < 3; i++) {
+    console.log("Hello, world!");
+}
+
+// Output:
+// Hello, world!
+// Hello, world!
+// Hello, world!

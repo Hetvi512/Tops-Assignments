@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <form action="" onsubmit="return one()">
+                <table cellpadding="10">
+                    <caption>
+                        <b> Marksheet for Information Technology</b>
+                        <br><br>Enter Marks
+                    </caption>
+
+                    <tr>
+                        <td>1. C Language</td>
+                        <td><input type="text" id="a"></td>
+                    </tr>
+                    <tr>
+                        <td>2. C++ Language</td>
+                        <td><input type="text" id="b"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Database</td>
+                        <td><input type="text" id="c"></td>
+                    </tr>
+                    <tr>
+                        <td>4. HTML</td>
+                        <td><input type="text" id="d"></td>
+                    </tr>
+                    <tr>
+                        <td>5. CSS </td>
+                        <td><input type="text" id="e"></td>
+                    </tr>
+                    <tr>
+                        <td>6. php</td>
+                        <td><input type="text" id="f"></td>
+                    </tr>
+                    <tr>
+                        <td>7. Core java</td>
+                        <td><input type="text" id="g"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Result" id="sub"></td>
+                    </tr>
+                    <tr>
+                        <th id="sum"></th>
+                        <th id="per"></th>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+        <script>
+
+            function one() {
+                s1 = document.getElementById("a").value
+                s2 = document.getElementById("b").value
+                s3 = document.getElementById("c").value
+                s4 = document.getElementById("d").value
+                s5 = document.getElementById("e").value
+                s6 = document.getElementById("f").value
+                s7 = document.getElementById("g").value
+
+                var sum = "Total " + "is " + ":" + (parseInt(s1) + parseInt(s2) + parseInt(s3) + parseInt(s4) + parseInt(s5) + parseInt(s6) + parseInt(s7)) + "/" + 350
+                var total = (parseInt(s1) + parseInt(s2) + parseInt(s3) + parseInt(s4) + parseInt(s5) + parseInt(s6) + parseInt(s7))
+                var per = "Percentage " + " is " + ":" + (total * 100) / 350 + "%"
+
+                document.getElementById("sum").innerHTML = sum
+                document.getElementById("per").innerHTML = per
+                return false
+            }
+        </script>
+    </center>
+</body>
+
+</html>

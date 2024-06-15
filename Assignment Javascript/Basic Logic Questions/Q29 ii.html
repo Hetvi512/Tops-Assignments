@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="char">Enter a character:</label>
+    <input type="text" id="char">
+    <p id="result"></p>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check() {
+            var char = document.getElementById("char").value.toLowerCase();
+
+            switch (char) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    document.getElementById("result").innerHTML = char + " is a Vowel.";
+                    break;
+
+                default:
+                    document.getElementById("result").innerHTML = char + " is a Consonant.";
+            }
+        }
+    </script>
+</body>
+</html>

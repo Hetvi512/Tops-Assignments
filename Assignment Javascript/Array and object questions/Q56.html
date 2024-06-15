@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" name="name" id="name" onblur="Valid(this,'nameerror')"
+                        onkeydown="Namevalid(this,'nerror')">
+                    <span id="nameerror"></span>
+                    <span id="nerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email" id="email" onblur="Valid(this,'emailerror')"
+                        onkeydown="Emailvalid(this,'eerror')">
+                    <span id="emailerror"></span>
+                    <span id="eerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password" id="password" onblur="Valid(this,'passerror')"
+                        onkeydown="Pwdvalid(this,'perror')">
+                    <span id="passerror"></span>
+                    <span id="perror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td>
+                    <input type="text" name="number" id="number" onblur="Valid(this,'numerror')"
+                        onkeydown="Mobilevalid(this,'noerror')">
+                    <span id="numerror"></span>
+                    <span id="noerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit"></th>
+            </tr>
+        </table>
+        <script>
+            function Valid(input, msg) {
+                if (input.value == "") {
+                    document.getElementById(msg).style.color = "red"
+                    document.getElementById(msg).innerText = "Plz enter data"
+                    return false
+
+                } else {
+                    document.getElementById(msg).innerText = ""
+                }
+
+            }
+            function Namevalid(input, msg) {
+                var name = /^[a-zA-Z]+$/
+                if (name.test(input.value)) {
+                    document.getElementById(msg).innerText = ""
+                    return true;
+
+                } else {
+                    document.getElementById(msg).style.color = "red"
+                    document.getElementById(msg).innerText = "Please Enter only Characters"
+                    return false;
+
+                }
+
+            }
+            function Emailvalid(input, msg) {
+                var email = /^[a-z0-9.-_]+@+([a-z0-9-_.]).([a-z]{3})/
+                if (email.test(input.value)) {
+                    document.getElementById(msg).innerText = ""
+                    return true;
+
+                } else {
+                    document.getElementById(msg).style.color = "red"
+                    document.getElementById(msg).innerText = "Please Enter valid Email"
+                    return false;
+
+                }
+
+            }
+            function Pwdvalid(input, msg) {
+                var pwd = /^[a-zA-Z0-9.-]{3,5}$/
+                if (pwd.test(input.value)) {
+                    document.getElementById(msg).innerText = ""
+                    return true;
+
+                } else {
+                    document.getElementById(msg).style.color = "red"
+                    document.getElementById(msg).innerText = "Please min 3 and max 5 characters"
+                    return false;
+
+                }
+
+            }
+            function Mobilevalid(input, msg) {
+                var mobile = /^[0-9]{10}$/
+                if (mobile.test(input.value)) {
+                    document.getElementById(msg).innerText = ""
+                    return true;
+
+                } else {
+                    document.getElementById(msg).style.color = "red"
+                    document.getElementById(msg).innerText = "Please enter valid mobile number"
+                    return false;
+
+                }
+
+            }
+        </script>
+    </center>
+</body>
+
+</html>

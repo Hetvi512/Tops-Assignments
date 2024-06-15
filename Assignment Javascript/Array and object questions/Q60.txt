@@ -1,0 +1,23 @@
+Q.60 Array vs object defences in JS?
+
+Ans: 
+Sure, here is a tabular comparison of arrays and objects in JavaScript:
+
+| Feature                | Array                              | Object                             |
+|------------------------|------------------------------------|------------------------------------|
+| Definition             | Ordered collection of elements     | Collection of key-value pairs      |
+| Syntax                 | `let arr = [1, 2, 3];`             | `let obj = {key1: 'value1', key2: 'value2'};` |
+| Accessing Elements     | `arr[0]` for first element         | `obj.key1` or `obj['key1']`        |
+| Index Type             | Indexed by numbers                 | Indexed by strings (keys)          |
+| Iteration Methods      | `for`, `forEach`, `map`, `filter`, `reduce`, etc. | `for`, `for...in`, `Object.keys`, `Object.values`, `Object.entries` |
+| Length Property        | `arr.length`                       | `Object.keys(obj).length`          |
+| Common Use Cases       | Lists, collections, and sequences  | Storing related data, configuration, and mappings |
+| Performance            | Fast access by index               | Fast access by key                 |
+| Methods                | Many built-in methods like `push`, `pop`, `shift`, `unshift` | Fewer built-in methods, can be extended with custom methods |
+| Mutability             | Mutable (elements can be changed)  | Mutable (values can be changed)    |
+| Order                  | Maintains order of elements        | Does not guarantee order of keys   |
+| Prototype              | `Array.prototype`                  | `Object.prototype`                 |
+| JSON Representation    | Represented as array in JSON       | Represented as object in JSON      |
+| Example                | `let fruits = ['apple', 'banana'];` | `let person = {name: 'John', age: 30};` |
+
+This table outlines the primary differences between arrays and objects in JavaScript, covering their definitions, syntax, usage, and more.
